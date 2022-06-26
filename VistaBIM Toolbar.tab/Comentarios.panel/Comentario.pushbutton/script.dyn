@@ -3133,37 +3133,6 @@
       "Description": "Applies a function to arguments."
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
-      "FunctionSignature": "e47339c8-2025-4f4d-a3d0-749f8ad6194b",
-      "FunctionType": "Graph",
-      "NodeType": "FunctionNode",
-      "Id": "7c6654a9baaf40bf889570b1e1fb4551",
-      "Inputs": [
-        {
-          "Id": "7a268e2f27bd4d868d4c162f01a9e3e9",
-          "Name": "list",
-          "Description": "var[]..[]",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "ade7040df28e4c38b8624f412e9bfaa2",
-          "Name": "list",
-          "Description": "return value",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Removes all Null, Empty and Blank from a list or nested list of lists."
-    },
-    {
       "ConcreteType": "CoreNodeModels.HigherOrder.ApplyFunction, CoreNodeModels",
       "VariableInputPorts": true,
       "NodeType": "ExtensionNode",
@@ -3665,6 +3634,37 @@
       ],
       "Replication": "Auto",
       "Description": "Set View Scale\n\nView.SetScale (scale: int = 100): View"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "8d999e76-78ae-4cc6-a4a3-b50679a618e8",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "39959b4d475d4e28a9ddd91fa19679b8",
+      "Inputs": [
+        {
+          "Id": "7cac49c79c634ef389d0d26406d46fe1",
+          "Name": "_input",
+          "Description": "var[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ca4f4d85e3154d37895f5856a273e79a",
+          "Name": "_out",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This node will remove all Null and Empty Lists from any list. "
     }
   ],
   "Connectors": [
@@ -3855,8 +3855,8 @@
     },
     {
       "Start": "1a6829b06714483ba52fe530469946db",
-      "End": "7a268e2f27bd4d868d4c162f01a9e3e9",
-      "Id": "1b95cffdbb7445c994e7bb95f90537eb"
+      "End": "7cac49c79c634ef389d0d26406d46fe1",
+      "Id": "acbfb7523fca40a3a556c73cd184ae2e"
     },
     {
       "Start": "b7b69be2e2b641f28d0b508febc7af68",
@@ -4184,11 +4184,6 @@
       "Id": "04165f71a1f2438db77aa7c44c91358b"
     },
     {
-      "Start": "ade7040df28e4c38b8624f412e9bfaa2",
-      "End": "72945cae57404fc4a6bccd246a1ba5ce",
-      "Id": "6b118d26b90f4a65939fd421e4fa6811"
-    },
-    {
       "Start": "706c6577d4ce4c59b4058f520eb562fd",
       "End": "159cf7afc70043c59555e70b9d09aa14",
       "Id": "6762d9b635014f7b983451b0a96950a5"
@@ -4257,6 +4252,11 @@
       "Start": "b7d24454defd44e79568487a4fd4e3aa",
       "End": "55d334b3598b43238ea04e1a19bbf66a",
       "Id": "6a6e7abf8a884f9fb557400a516aa648"
+    },
+    {
+      "Start": "ca4f4d85e3154d37895f5856a273e79a",
+      "End": "72945cae57404fc4a6bccd246a1ba5ce",
+      "Id": "cbd26571d8a34f5e8856ab381312b629"
     }
   ],
   "Dependencies": [
@@ -4274,8 +4274,8 @@
     "2652eeea-0a2f-4100-9027-32c61cd67686",
     "8543a5f0-8d75-43d3-88b3-aebd95b1ada4",
     "c3a36eb7-8fe8-4417-b31e-ccc9fded769b",
-    "e47339c8-2025-4f4d-a3d0-749f8ad6194b",
-    "5f8d13f8-dcac-41f4-817f-655f7ed2a265"
+    "5f8d13f8-dcac-41f4-817f-655f7ed2a265",
+    "8d999e76-78ae-4cc6-a4a3-b50679a618e8"
   ],
   "NodeLibraryDependencies": [
     {
@@ -4299,8 +4299,7 @@
         "496db602b15b4756b5e082958d0fc783",
         "d06edff5008640938193a408bd234447",
         "4f39aa5923104e6c9271eb146dd94125",
-        "d5b612f0ebcb4e3cbc4e88853a7b0014",
-        "7c6654a9baaf40bf889570b1e1fb4551"
+        "d5b612f0ebcb4e3cbc4e88853a7b0014"
       ]
     },
     {
@@ -4350,6 +4349,14 @@
       "ReferenceType": "Package",
       "Nodes": [
         "365eeb1b030d4cf5a3fd15dcc981064f"
+      ]
+    },
+    {
+      "Name": "archi-lab.net",
+      "Version": "2022.210.2419",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "39959b4d475d4e28a9ddd91fa19679b8"
       ]
     }
   ],
@@ -4593,8 +4600,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 3441.9367001110381,
-        "Y": 242.5889587444106
+        "X": 3547.7667386209373,
+        "Y": 242.80655962612332
       },
       {
         "ShowGeometry": false,
@@ -4663,8 +4670,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 3201.6317713681365,
-        "Y": 229.10965972800062
+        "X": 3307.4618098780356,
+        "Y": 229.32726060971333
       },
       {
         "ShowGeometry": false,
@@ -5218,23 +5225,13 @@
       },
       {
         "ShowGeometry": false,
-        "Name": "List Clean",
-        "Id": "7c6654a9baaf40bf889570b1e1fb4551",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 2853.4150055686896,
-        "Y": 250.73199509165414
-      },
-      {
-        "ShowGeometry": false,
         "Name": "Function Apply",
         "Id": "3a26d25f945a4a8386102e2da1a61d39",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 3025.6433032533168,
-        "Y": 225.00395896868213
+        "X": 3131.473341763216,
+        "Y": 225.22155985039484
       },
       {
         "ShowGeometry": false,
@@ -5243,8 +5240,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2990.5612703813667,
-        "Y": 141.95902366184117
+        "X": 3096.3913088912659,
+        "Y": 142.17662454355388
       },
       {
         "ShowGeometry": true,
@@ -5375,11 +5372,21 @@
         "Excluded": false,
         "X": 8790.7306031693,
         "Y": -148.366338874522
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Clear List",
+        "Id": "39959b4d475d4e28a9ddd91fa19679b8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2865.1097056274384,
+        "Y": 250.64543393178366
       }
     ],
     "Annotations": [],
-    "X": -5109.2444931767714,
-    "Y": 257.93352668099806,
-    "Zoom": 0.6621633187834336
+    "X": -1733.1592032507647,
+    "Y": 113.75326069451086,
+    "Zoom": 0.83239192606697487
   }
 }
