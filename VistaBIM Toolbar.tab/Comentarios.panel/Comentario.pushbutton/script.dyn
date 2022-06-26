@@ -4109,6 +4109,27 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\ProgramData\\Dynamo\\Dynamo Core\\VistaBIMLogo.png",
+      "InputValue": "..\\..\\..\\..\\..\\..\\..\\..\\..\\ProgramData\\Dynamo\\Dynamo Core\\VistaBIMLogo.png",
+      "NodeType": "ExtensionNode",
+      "Id": "ea856c112a374555a2e65ceaeca5e5c1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "959cbe2a89ef41acabe8588794277e41",
+          "Name": "",
+          "Description": "Filename",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its filename"
     }
   ],
   "Connectors": [
@@ -4781,6 +4802,11 @@
       "Start": "e965d3300ec14bc4bb00cd6fc8a2ecf0",
       "End": "160feeea9f8147c2ab490fe29584e9c0",
       "Id": "6c250e773d85499f976978787bee9e7e"
+    },
+    {
+      "Start": "959cbe2a89ef41acabe8588794277e41",
+      "End": "932f65452cc64eebbee6aac686b2d2ab",
+      "Id": "638c6da758ad48b39f8d97b59cc15d26"
     }
   ],
   "Dependencies": [
@@ -6039,11 +6065,21 @@
         "Excluded": false,
         "X": 2123.8060306704597,
         "Y": 1228.8281408940841
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File Path",
+        "Id": "ea856c112a374555a2e65ceaeca5e5c1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 337.05522482011963,
+        "Y": 408.60813812258732
       }
     ],
     "Annotations": [],
-    "X": -7224.2891255740305,
-    "Y": 163.81554213602746,
-    "Zoom": 0.86794680457763029
+    "X": 360.12417319913834,
+    "Y": 183.04340266533461,
+    "Zoom": 0.635225273301437
   }
 }
