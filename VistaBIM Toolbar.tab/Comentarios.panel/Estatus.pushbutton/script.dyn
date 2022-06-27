@@ -1518,6 +1518,161 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"No hay Comentarios sin Resolver\";",
+      "Id": "f1f4bb414f1a4d3c8a48d29acee96a05",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f2c2fc21383945ae982c1a698770dc76",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "x;\ny;\n[Imperative]\n{\n\tif(x == true && y == null)\n\t{\n\t\treturn = [];\n\t}\n\telseif(x == false && y != null)\n\t{\n\t\treturn = [];\n\t}\n\telse\n\t{\n\t\treturn = \"Mensaje\";\n\t}\n};",
+      "Id": "78ecf6c6f8dd4498a37dac1eb0cc0a8e",
+      "Inputs": [
+        {
+          "Id": "3e3c40c1bfe542b3941d9f182ddc9d96",
+          "Name": "x",
+          "Description": "x",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "de47558902454263a91da1603c11005c",
+          "Name": "y",
+          "Description": "y",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9623544b3ca94ab1be06938ba25de8c3",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "17682eb72fae42f3b29d3e7c15904949",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "37f3a83c5cc34e71a74047b42209b896",
+          "Name": "",
+          "Description": "Value of expression at line 3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Rhythm.Revit.Helpers.Helpers.UserMessage@string,string,var[]",
+      "Id": "74038b51b7414ad4919d23ca8b98da86",
+      "Inputs": [
+        {
+          "Id": "1a8de1e3b6f2470ca12982fea5d39e8e",
+          "Name": "caption",
+          "Description": "The caption for the window title.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "04f0cd7015a4486e89c5f0bf69e9f69b",
+          "Name": "message",
+          "Description": "The message to give the user.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b23edd17fbdc4cfe8f979f670dfa11fc",
+          "Name": "obj",
+          "Description": "The object to passthrough.\n\nvar[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1673134b77a749ba846b30835aadb61b",
+          "Name": "result",
+          "Description": "The object.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This provides a user message with the option to cancel the process downstream. If no is selected the node will return null.\n\nHelpers.UserMessage (caption: string, message: string, obj: var[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.IsEmpty@var[]..[]",
+      "Id": "469c2f5fc4424a9cb12d320666e137cb",
+      "Inputs": [
+        {
+          "Id": "7c75b8b06366450f9c1a195036d4f385",
+          "Name": "list",
+          "Description": "List to check for items.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c5fc408632094de6bc0bdaaab07bf307",
+          "Name": "bool",
+          "Description": "Whether the list is empty.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Determines if the given list is empty.\n\nList.IsEmpty (list: var[]..[]): bool"
     }
   ],
   "Connectors": [
@@ -1570,6 +1725,11 @@
       "Start": "d8fbb758446d4f5992014feacd8b5ea3",
       "End": "7d06f8629ee54204bf1d1ad888a29ed2",
       "Id": "f2d049a1ac99428a8e1428f414af62d2"
+    },
+    {
+      "Start": "d8fbb758446d4f5992014feacd8b5ea3",
+      "End": "de47558902454263a91da1603c11005c",
+      "Id": "49986beba00147a9a4db6a8788f21616"
     },
     {
       "Start": "977b3c996a524aad9d57bd245339bdab",
@@ -1682,6 +1842,11 @@
       "Id": "ba0ac8cc980f4c43a29267d271dec732"
     },
     {
+      "Start": "dd39ea566b1049edbaf17c26f632e218",
+      "End": "7c75b8b06366450f9c1a195036d4f385",
+      "Id": "7082a5e082624441925bde5061d1d74b"
+    },
+    {
       "Start": "0de98d0ab00a4032a51f3f3d3d35c727",
       "End": "de61c33c38b3400bafe1a07f5e5cefbf",
       "Id": "10e154348faf4ddba94b7a7a6f715589"
@@ -1785,6 +1950,26 @@
       "Start": "6d5ca72d606749f99f72778e93f6c180",
       "End": "ef5c874ea75e4fb88a7a18820035e338",
       "Id": "3a249c8c00d8490d8b8ab2fadbb3f48a"
+    },
+    {
+      "Start": "f2c2fc21383945ae982c1a698770dc76",
+      "End": "04f0cd7015a4486e89c5f0bf69e9f69b",
+      "Id": "8a4b9622eadc4b478c50caffafac935f"
+    },
+    {
+      "Start": "37f3a83c5cc34e71a74047b42209b896",
+      "End": "b23edd17fbdc4cfe8f979f670dfa11fc",
+      "Id": "70f848dd21844f91b27f0a4116da9ad8"
+    },
+    {
+      "Start": "37f3a83c5cc34e71a74047b42209b896",
+      "End": "1a8de1e3b6f2470ca12982fea5d39e8e",
+      "Id": "f996e754673f42e4b608b6fde3f9825c"
+    },
+    {
+      "Start": "c5fc408632094de6bc0bdaaab07bf307",
+      "End": "3e3c40c1bfe542b3941d9f182ddc9d96",
+      "Id": "cc7e70a75dc3425ba7863480a952de56"
     }
   ],
   "Dependencies": [
@@ -1822,6 +2007,14 @@
       "Nodes": [
         "7cdda173783b4856b6d2411cdd355b24",
         "7d27e2e858c24a25abdffcf152f2ff77"
+      ]
+    },
+    {
+      "Name": "Rhythm",
+      "Version": "2020.7.25",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "74038b51b7414ad4919d23ca8b98da86"
       ]
     }
   ],
@@ -2247,11 +2440,51 @@
         "Excluded": false,
         "X": -1137.7643652426291,
         "Y": 1517.7586434594857
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "f1f4bb414f1a4d3c8a48d29acee96a05",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3641.3251023962985,
+        "Y": 2669.6357780751969
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "Code Block",
+        "Id": "78ecf6c6f8dd4498a37dac1eb0cc0a8e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3613.3251023962985,
+        "Y": 2309.073543243227
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "ʳʰʸᵗʰᵐ|Helpers.UserMessage",
+        "Id": "74038b51b7414ad4919d23ca8b98da86",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4133.5641375016121,
+        "Y": 2287.4503131213505
+      },
+      {
+        "ShowGeometry": false,
+        "Name": "List.IsEmpty",
+        "Id": "469c2f5fc4424a9cb12d320666e137cb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3613.3251023962985,
+        "Y": 2225.7570860366568
       }
     ],
     "Annotations": [],
-    "X": 472.69694245178852,
-    "Y": 110.00256854897094,
-    "Zoom": 0.38909369635371122
+    "X": -975.38008425609519,
+    "Y": -587.73297553867519,
+    "Zoom": 0.59684449895129288
   }
 }

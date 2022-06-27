@@ -430,65 +430,6 @@
       "Description": "Create radio buttons input for UI.MultipleInputForm ++ . "
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
-      "FunctionSignature": "DSCore.List.DropItems@var[]..[],int",
-      "Id": "d52f848fcd8b4448b76b5140bef9703b",
-      "Inputs": [
-        {
-          "Id": "c5eccb32688d45c09d829e03d848fd6a",
-          "Name": "list",
-          "Description": "List to remove items from.\n\nvar[]..[]",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "4e81eaddf68f4c0893cd2709ffba65d2",
-          "Name": "amount",
-          "Description": "Amount of items to remove. If negative, items are removed from the end of the list.\n\nint",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "9c0eed117ac1404bbb15997664eaf11a",
-          "Name": "list",
-          "Description": "List of remaining items.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Removes an amount of items from the start of the list. If the amount is a negative value, items are removed from the end of the list.\n\nList.DropItems (list: var[]..[], amount: int): var[]..[]"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "2;",
-      "Id": "96cd0ed8d8bb42fe8b46aab152e7d40a",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "aebf03da2e18402082bfc2c75903be75",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
       "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
       "NodeType": "BooleanInputNode",
       "InputValue": true,
@@ -3130,21 +3071,6 @@
       "Id": "2166de49f8fd4d10bbbd1ab66ecc4814"
     },
     {
-      "Start": "9c0eed117ac1404bbb15997664eaf11a",
-      "End": "e503d49d6e214d3fa1b0b77a548c7587",
-      "Id": "6c62c6997864454e9f9ae33e2679df7b"
-    },
-    {
-      "Start": "9c0eed117ac1404bbb15997664eaf11a",
-      "End": "7dd21a5063dd4629baa0d71938a1154b",
-      "Id": "a79f2cbf49c042efb046843587b84ee4"
-    },
-    {
-      "Start": "aebf03da2e18402082bfc2c75903be75",
-      "End": "4e81eaddf68f4c0893cd2709ffba65d2",
-      "Id": "239435d2a13b436c87d735ed79e09bb6"
-    },
-    {
       "Start": "7446ee53978c49c4b067e8022607c234",
       "End": "987df364b5bc42d8bde145b411386442",
       "Id": "6ddabf787ff943baad047d9525f97c4f"
@@ -3476,8 +3402,13 @@
     },
     {
       "Start": "c634d58d48554cec99c8e419dd70f41f",
-      "End": "c5eccb32688d45c09d829e03d848fd6a",
-      "Id": "923d6cb9dcdc4656b62dc9f939667109"
+      "End": "e503d49d6e214d3fa1b0b77a548c7587",
+      "Id": "bb383a43dd824432b972e2b240ad75db"
+    },
+    {
+      "Start": "c634d58d48554cec99c8e419dd70f41f",
+      "End": "7dd21a5063dd4629baa0d71938a1154b",
+      "Id": "931a27d948b8419d86cbb3eff8536252"
     },
     {
       "Start": "39717bcf78314c1da2080addf989b563",
@@ -3795,26 +3726,6 @@
         "Excluded": false,
         "X": -432.66119827202738,
         "Y": 1469.4207892184277
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "List.DropItems",
-        "Id": "d52f848fcd8b4448b76b5140bef9703b",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -749.41485574443482,
-        "Y": 1508.9252552233895
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "96cd0ed8d8bb42fe8b46aab152e7d40a",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -749.41485574443482,
-        "Y": 1615.9700445438978
       },
       {
         "ShowGeometry": true,
