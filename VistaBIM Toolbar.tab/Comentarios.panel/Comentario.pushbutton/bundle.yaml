@@ -1,0 +1,5 @@
+tooltip: Crea una vista 3D agrupada en funcion de la disciplina de los elementos seleccionados para comunicar un comentario.
+author: "José Ignacio Núñez"
+engine:
+  clean: false
+  automate: false

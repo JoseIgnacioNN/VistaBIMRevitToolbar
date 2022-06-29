@@ -1,0 +1,5 @@
+tooltip: Consulta los comentarios sin resolver de la disciplina seleccionada y abre la vista asociada al comentario seleccionado.
+author: "José Ignacio Núñez"
+engine:
+  clean: false
+  automate: false
