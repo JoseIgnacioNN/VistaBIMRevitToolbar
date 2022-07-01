@@ -3270,6 +3270,37 @@
       ],
       "Replication": "Auto",
       "Description": "Get workset name.\n\nWorkset.Name: string\n\nNamespace:\nOrchid.RevitProject.Common"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "e47339c8-2025-4f4d-a3d0-749f8ad6194b",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "4287297f0c18475a89e3faff86f36fb9",
+      "Inputs": [
+        {
+          "Id": "6ec9362027fc4fd19e8fe413446e1f7e",
+          "Name": "list",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4bd0c8996e764ebd8ab6e2198512881d",
+          "Name": "list",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Removes all Null, Empty and Blank from a list or nested list of lists."
     }
   ],
   "Connectors": [
@@ -3410,8 +3441,8 @@
     },
     {
       "Start": "983cf59ecb124bb69a1204af8371ae73",
-      "End": "405065f6c8cf403ebe19932b7843103b",
-      "Id": "6748bf47c83140b19c98bba403c53671"
+      "End": "6ec9362027fc4fd19e8fe413446e1f7e",
+      "Id": "6a91b866343e4c49b21dcb79c296ae31"
     },
     {
       "Start": "aec184f10a9f4145b783563a39fce570",
@@ -3857,6 +3888,11 @@
       "Start": "fba0377e0d3042e18cb4890919a27894",
       "End": "7dd21a5063dd4629baa0d71938a1154b",
       "Id": "ea88efa6c6124eb29154a3934dc14eeb"
+    },
+    {
+      "Start": "4bd0c8996e764ebd8ab6e2198512881d",
+      "End": "405065f6c8cf403ebe19932b7843103b",
+      "Id": "21ced1fa3e5746039b84d54915838953"
     }
   ],
   "Dependencies": [
@@ -3865,7 +3901,8 @@
     "4abff87f-8dad-41a9-bcf6-98784ac456eb",
     "0dd4bbc7-3594-4c4f-8e7d-760421e4bc9b",
     "af155da9-b1c8-4edb-b621-2c60caa7e8f6",
-    "8543a5f0-8d75-43d3-88b3-aebd95b1ada4"
+    "8543a5f0-8d75-43d3-88b3-aebd95b1ada4",
+    "e47339c8-2025-4f4d-a3d0-749f8ad6194b"
   ],
   "NodeLibraryDependencies": [
     {
@@ -3873,7 +3910,8 @@
       "Version": "2021.11.10",
       "ReferenceType": "Package",
       "Nodes": [
-        "35923a2d17b04910bcc1145ca62e31fe"
+        "35923a2d17b04910bcc1145ca62e31fe",
+        "4287297f0c18475a89e3faff86f36fb9"
       ]
     },
     {
@@ -4842,11 +4880,21 @@
         "Excluded": false,
         "X": -685.89741784469572,
         "Y": 1556.4285512849833
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Clean",
+        "Id": "4287297f0c18475a89e3faff86f36fb9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 6328.5680359220905,
+        "Y": 1298.0743904065102
       }
     ],
     "Annotations": [],
-    "X": 215.59091107249165,
-    "Y": 337.36272169746377,
-    "Zoom": 0.17469388187710172
+    "X": -8205.2437545707453,
+    "Y": -1351.9193240244949,
+    "Zoom": 1.3989331716619215
   }
 }
