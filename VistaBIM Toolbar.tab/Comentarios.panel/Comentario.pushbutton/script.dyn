@@ -4137,6 +4137,55 @@
       ],
       "Replication": "Auto",
       "Description": "Retrieves the last item in a list.\n\nList.LastItem (list: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"D:\\\\OneDrive\\\\04_TRABAJO\\\\00_Desarrollo Dynamo\\\\VistaBIM\\\\Instalador\\\\Libreta de Direcciones.xlsx\";",
+      "Id": "30a0a901438d400cbf8fab170fea8c66",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c3dfee4739bd42d19ad40dc21f5d6707",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "c98867fdd8fd40659140de3ac0d82e66",
+      "Inputs": [
+        {
+          "Id": "339b669994aa47d085c83c403c88fad5",
+          "Name": "path",
+          "Description": "Path to the file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1156f4982fd049938da500706d01a49e",
+          "Name": "file",
+          "Description": "File object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a file object from a path."
     }
   ],
   "Connectors": [
@@ -4791,11 +4840,6 @@
       "Id": "8f8a002c77a946ad8e8cf2645752c439"
     },
     {
-      "Start": "0b390c5d96b3461b90937ee9fb385158",
-      "End": "f9beaff7081442a8b41104029be7c9e6",
-      "Id": "d58738290bfa4c6093d7f2b59d937aae"
-    },
-    {
       "Start": "fa71a8e484084ff4a0f8b0a761f8a3b7",
       "End": "999674a85a7d4d49bbaa6d3be86d447f",
       "Id": "28ca57236ff34aebbd0677657d9ffd63"
@@ -4824,6 +4868,16 @@
       "Start": "715cfb5b744e4974b9e4712296bdc34a",
       "End": "33f870dfd03b4fc495579d0b89166ba8",
       "Id": "34d988b91ecb43e0899f21a1ff1c387a"
+    },
+    {
+      "Start": "c3dfee4739bd42d19ad40dc21f5d6707",
+      "End": "339b669994aa47d085c83c403c88fad5",
+      "Id": "9f63e9fd727e42d38725ec4c077778b9"
+    },
+    {
+      "Start": "c3dfee4739bd42d19ad40dc21f5d6707",
+      "End": "f9beaff7081442a8b41104029be7c9e6",
+      "Id": "b7333ef8a1f24e10b0c35360827cde4e"
     }
   ],
   "Dependencies": [
@@ -6085,11 +6139,31 @@
         "Excluded": false,
         "X": -1473.0911999951593,
         "Y": 1065.6969842247424
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "30a0a901438d400cbf8fab170fea8c66",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -3349.2363898093031,
+        "Y": 1217.574785087008
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "File From Path",
+        "Id": "c98867fdd8fd40659140de3ac0d82e66",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -2575.3166704838686,
+        "Y": 1478.1107042133378
       }
     ],
     "Annotations": [],
-    "X": 3413.42200908735,
-    "Y": -648.98084148385783,
-    "Zoom": 1.2114984589139324
+    "X": 3506.4489844780674,
+    "Y": -701.44503500921655,
+    "Zoom": 1.0289348437029642
   }
 }
