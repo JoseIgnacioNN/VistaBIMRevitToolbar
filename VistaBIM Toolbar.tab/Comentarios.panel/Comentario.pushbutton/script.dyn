@@ -3266,12 +3266,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "\"Detail Level\";\n3;",
+      "Code": "\"Nivel de detalle\";\n3;",
       "Id": "5c1e2d3c094b45b38dc5dc47097e8486",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "2eb7ff91b8bf4979ae70e5e2090753f1",
+          "Id": "d43059f123d14564bdf17176920091e3",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -3280,7 +3280,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "c6b86f5ec8084fa194b0d0c0ea784b00",
+          "Id": "116bf99a68ae4dcfb9652be48949cc28",
           "Name": "",
           "Description": "Value of expression at line 2",
           "UsingDefaultValue": false,
@@ -4991,14 +4991,14 @@
       "Id": "8faa0146633e4ee1bb39f94b89b757b2"
     },
     {
-      "Start": "2eb7ff91b8bf4979ae70e5e2090753f1",
+      "Start": "d43059f123d14564bdf17176920091e3",
       "End": "d943af988a5d45d5a71973c6bfd17a03",
-      "Id": "484878fcac854d20b91d7bd6d43cdd4f"
+      "Id": "43e2b48ecd3548b8b8a7c0cafab378c5"
     },
     {
-      "Start": "c6b86f5ec8084fa194b0d0c0ea784b00",
+      "Start": "116bf99a68ae4dcfb9652be48949cc28",
       "End": "9e482b8ef7e843bfa9bfd00293c08005",
-      "Id": "c55e5dfca42e40339c02d7d51e6d2a2b"
+      "Id": "14fcc1fd5432465687d03c39d6818af4"
     },
     {
       "Start": "3a5af431c41f4c7d9a9e08aba6be46d9",
@@ -6560,8 +6560,8 @@
       }
     ],
     "Annotations": [],
-    "X": -3371.2269111174073,
-    "Y": 588.69485681597178,
-    "Zoom": 0.44006825020803458
+    "X": -23005.27113156781,
+    "Y": 481.20534985872484,
+    "Zoom": 2.5793652390100115
   }
 }
