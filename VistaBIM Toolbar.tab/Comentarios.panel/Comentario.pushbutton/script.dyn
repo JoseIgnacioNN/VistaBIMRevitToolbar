@@ -3944,27 +3944,6 @@
       "Description": "Allows for DesignScript code to be authored directly"
     },
     {
-      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Users\\jinun\\OneDrive\\Escritorio\\Libreta de Direcciones.xlsx",
-      "InputValue": "C:\\Users\\jinun\\OneDrive\\Escritorio\\Libreta de Direcciones.xlsx",
-      "NodeType": "ExtensionNode",
-      "Id": "e5810c46088543d8afab4192e3616dfb",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "0b390c5d96b3461b90937ee9fb385158",
-          "Name": "",
-          "Description": "Filename",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows you to select a file on the system to get its filename"
-    },
-    {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
       "NodeType": "FunctionNode",
       "FunctionSignature": "DSCore.List.DropItems@var[]..[],int",
@@ -4116,12 +4095,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "\"D:\\\\OneDrive\\\\04_TRABAJO\\\\00_Desarrollo Dynamo\\\\VistaBIM\\\\Instalador\\\\Libreta de Direcciones.xlsx\";",
+      "Code": "\"\\\\\\\\172.20.100.2\\\\VistaBIM\\\\VISTABIM\\\\DOC TIPO\\\\Libreta de Direcciones.xlsx\";",
       "Id": "30a0a901438d400cbf8fab170fea8c66",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "c3dfee4739bd42d19ad40dc21f5d6707",
+          "Id": "c86679a057a8493493cc27486d8bf051",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -4132,35 +4111,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "c98867fdd8fd40659140de3ac0d82e66",
-      "Inputs": [
-        {
-          "Id": "339b669994aa47d085c83c403c88fad5",
-          "Name": "path",
-          "Description": "Path to the file.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "1156f4982fd049938da500706d01a49e",
-          "Name": "file",
-          "Description": "File object",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Creates a file object from a path."
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -5141,14 +5091,9 @@
       "Id": "34d988b91ecb43e0899f21a1ff1c387a"
     },
     {
-      "Start": "c3dfee4739bd42d19ad40dc21f5d6707",
-      "End": "339b669994aa47d085c83c403c88fad5",
-      "Id": "9f63e9fd727e42d38725ec4c077778b9"
-    },
-    {
-      "Start": "c3dfee4739bd42d19ad40dc21f5d6707",
+      "Start": "c86679a057a8493493cc27486d8bf051",
       "End": "f9beaff7081442a8b41104029be7c9e6",
-      "Id": "b7333ef8a1f24e10b0c35360827cde4e"
+      "Id": "9cc3e41eb2be4c5eb9f1dcc105890c8d"
     },
     {
       "Start": "e145a7de3ecc4ed6a446cbbd1c1ad332",
@@ -6399,16 +6344,6 @@
         "Y": 1194.5886454872327
       },
       {
-        "Id": "e5810c46088543d8afab4192e3616dfb",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Name": "File Path",
-        "ShowGeometry": true,
-        "Excluded": false,
-        "X": -2911.7384879178881,
-        "Y": 1036.8777118830071
-      },
-      {
         "Id": "fd3943406b764753b553ec417baa3d6f",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
@@ -6467,16 +6402,6 @@
         "Excluded": false,
         "X": -3349.2363898093031,
         "Y": 1217.574785087008
-      },
-      {
-        "Id": "c98867fdd8fd40659140de3ac0d82e66",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Name": "File From Path",
-        "ShowGeometry": true,
-        "Excluded": false,
-        "X": -2575.3166704838686,
-        "Y": 1478.1107042133378
       },
       {
         "Id": "52573c134baf47a597e3cf17eb09ab4f",
@@ -6560,8 +6485,8 @@
       }
     ],
     "Annotations": [],
-    "X": -23005.27113156781,
-    "Y": 481.20534985872484,
-    "Zoom": 2.5793652390100115
+    "X": 6084.9999121599731,
+    "Y": -1618.8110636684069,
+    "Zoom": 1.7433170305908656
   }
 }
