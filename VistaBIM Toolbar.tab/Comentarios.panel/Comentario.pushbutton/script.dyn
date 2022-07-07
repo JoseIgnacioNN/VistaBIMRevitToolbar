@@ -4221,26 +4221,6 @@
       "Description": "Filters a sequence by looking up corresponding indices in a separate list of booleans.\n\nList.FilterByBoolMask (list: var[]..[], mask: var[]..[]): var[]..[]"
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "\"D:\\\\OneDrive\\\\04_TRABAJO\\\\00_Desarrollo Dynamo\\\\VistaBIM\\\\Instalador\\\\Libreta de Direcciones.xlsx\";",
-      "Id": "392e2678e21d4529ab8ee4d8eeacfe88",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "655bac0074db44bd8998925ff69cd32d",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
       "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
       "NodeType": "ExtensionNode",
       "Id": "433559d0be854ba38a99314bd92dde6e",
@@ -4422,6 +4402,26 @@
       ],
       "Replication": "Auto",
       "Description": "Creates a Revit element selection input for UI.MultipleInputForm++ . Check out www.data-shapes.net for more infos!"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "\\\\172.20.100.2.\\VistaBIM\\VISTABIM\\DOCTIPO\\Libreta de Direcciones.xlsx ",
+      "Id": "9f50725a9c7e44d5877fa24fdf6f56c9",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "adee83e2976a4a0fa7c8f24bd83b55ea",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
     }
   ],
   "Connectors": [
@@ -5126,11 +5126,6 @@
       "Id": "2a4b1ed464324c09b226ea125704f269"
     },
     {
-      "Start": "655bac0074db44bd8998925ff69cd32d",
-      "End": "982c0056714d44e4b6928ba5b6a7e281",
-      "Id": "5792137043b942baa70905b027b37f42"
-    },
-    {
       "Start": "b503ec782d0347c6bd6fe846fd214e81",
       "End": "cba6f7a960c64a26b2bcced4f4c7c080",
       "Id": "7f8c08b7eccc424eb4f8899d28d3b55f"
@@ -5149,6 +5144,11 @@
       "Start": "b54f15754b414e1286cd876cf54d87d7",
       "End": "de8aee4b91e94fedb27fa21503ac1bff",
       "Id": "d9041321e1db4c1e8828e54cb5143768"
+    },
+    {
+      "Start": "adee83e2976a4a0fa7c8f24bd83b55ea",
+      "End": "982c0056714d44e4b6928ba5b6a7e281",
+      "Id": "e0d3c8a5021046ae81218cd32f9b6b50"
     }
   ],
   "Dependencies": [
@@ -6444,23 +6444,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "392e2678e21d4529ab8ee4d8eeacfe88",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -3347.5155324165526,
-        "Y": 1449.3169139773977
-      },
-      {
-        "ShowGeometry": true,
         "Name": "File From Path",
         "Id": "433559d0be854ba38a99314bd92dde6e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2586.5513488091442,
-        "Y": 1349.5001382326666
+        "X": -2654.0,
+        "Y": 1590.6852788587996
       },
       {
         "ShowGeometry": true,
@@ -6491,11 +6481,21 @@
         "Excluded": false,
         "X": -1546.0207866092039,
         "Y": 142.96346258948995
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "9f50725a9c7e44d5877fa24fdf6f56c9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -3014.6071999635692,
+        "Y": 1598.0717237750298
       }
     ],
     "Annotations": [],
-    "X": -16683.343273786602,
-    "Y": 960.28746439344593,
-    "Zoom": 1.657168547410226
+    "X": 2814.3045094499166,
+    "Y": -333.04746076418451,
+    "Zoom": 0.66339078595235634
   }
 }
