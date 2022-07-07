@@ -4412,6 +4412,172 @@
       ],
       "Replication": "Auto",
       "Description": "Filters a sequence by looking up corresponding indices in a separate list of booleans.\n\nList.FilterByBoolMask (list: var[]..[], mask: var[]..[]): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "\"D:\\\\OneDrive\\\\04_TRABAJO\\\\00_Desarrollo Dynamo\\\\VistaBIM\\\\Instalador\\\\Libreta de Direcciones.xlsx\";",
+      "Id": "392e2678e21d4529ab8ee4d8eeacfe88",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "655bac0074db44bd8998925ff69cd32d",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "433559d0be854ba38a99314bd92dde6e",
+      "Inputs": [
+        {
+          "Id": "982c0056714d44e4b6928ba5b6a7e281",
+          "Name": "path",
+          "Description": "Path to the file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b503ec782d0347c6bd6fe846fd214e81",
+          "Name": "file",
+          "Description": "File object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a file object from a path."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "6cf7f3b9-69ab-40da-b41c-62068370e1b8",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "98a532203d5c4dddb88b9c40afe18a91",
+      "Inputs": [
+        {
+          "Id": "cba6f7a960c64a26b2bcced4f4c7c080",
+          "Name": "filePath",
+          "Description": "var\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5c07bdedf7bc454ea6d5ca1d15333879",
+          "Name": "runIt",
+          "Description": "bool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "662457a20c764b3aa5be81d40ba573bc",
+          "Name": "sheetName",
+          "Description": "string\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d960db5a6e8f4a9f85a971bffb14d0ad",
+          "Name": "byColumn",
+          "Description": "bool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5427538a4e144ce8b55861ced4f316c8",
+          "Name": "origin",
+          "Description": "string\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "5fedb39e1d36432885967a6617098a74",
+          "Name": "extent",
+          "Description": "string\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ddd20486346b4f579a2da38449bd8670",
+          "Name": "OUT",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "This node will read an excel file. You can read an entore sheet contents, read from specific origin cell, read only specific range, or do all of the former for multiple sheets at the same time. "
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "true;",
+      "Id": "2300adfefeff4f37bdd962e76888ae38",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5f1e4939cce0445986d55fd1c919cbcc",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
+      "HintPath": "C:\\Users\\jinun\\OneDrive\\Documentos\\GitHub\\VistaBIMRevitToolbar\\VistaBIM Toolbar.tab\\Comentarios.panel\\Comentario.pushbutton\\No file selected",
+      "InputValue": "No file selected.",
+      "NodeType": "ExtensionNode",
+      "Id": "c8e8c612b7c047e3afd25421a8f4df29",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "66da81d77b9148e8a7e56cb7b0bb26b7",
+          "Name": "",
+          "Description": "Filename",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows you to select a file on the system to get its filename"
     }
   ],
   "Connectors": [
@@ -5149,6 +5315,21 @@
       "Start": "4ae6ed80b28d44a9b110ce9b2ed1d834",
       "End": "444f0c2f10434eb1828f406c90b9288a",
       "Id": "2a4b1ed464324c09b226ea125704f269"
+    },
+    {
+      "Start": "655bac0074db44bd8998925ff69cd32d",
+      "End": "982c0056714d44e4b6928ba5b6a7e281",
+      "Id": "5792137043b942baa70905b027b37f42"
+    },
+    {
+      "Start": "b503ec782d0347c6bd6fe846fd214e81",
+      "End": "cba6f7a960c64a26b2bcced4f4c7c080",
+      "Id": "7f8c08b7eccc424eb4f8899d28d3b55f"
+    },
+    {
+      "Start": "5f1e4939cce0445986d55fd1c919cbcc",
+      "End": "5c07bdedf7bc454ea6d5ca1d15333879",
+      "Id": "7c2bc075b77b42edadd23b2f2d85f652"
     }
   ],
   "Dependencies": [
@@ -5168,7 +5349,8 @@
     "c3a36eb7-8fe8-4417-b31e-ccc9fded769b",
     "5f8d13f8-dcac-41f4-817f-655f7ed2a265",
     "d1760333-ad7e-4e5f-8076-1448b0b7467e",
-    "b36597e1-1bf1-4ef3-baeb-d2453905b9e9"
+    "b36597e1-1bf1-4ef3-baeb-d2453905b9e9",
+    "6cf7f3b9-69ab-40da-b41c-62068370e1b8"
   ],
   "NodeLibraryDependencies": [
     {
@@ -5247,6 +5429,14 @@
       "ReferenceType": "Package",
       "Nodes": [
         "365eeb1b030d4cf5a3fd15dcc981064f"
+      ]
+    },
+    {
+      "Name": "BumbleBee",
+      "Version": "2020.2.1",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "98a532203d5c4dddb88b9c40afe18a91"
       ]
     }
   ],
@@ -6331,7 +6521,7 @@
         "ShowGeometry": true,
         "Excluded": false,
         "X": -2560.7384879178881,
-        "Y": 1036.8777118830071
+        "Y": 1036.3040927520904
       },
       {
         "Id": "481506519d2d431c9bbc331506553935",
@@ -6399,7 +6589,7 @@
         "IsSetAsOutput": false,
         "Name": "Code Block",
         "ShowGeometry": true,
-        "Excluded": false,
+        "Excluded": true,
         "X": -3349.2363898093031,
         "Y": 1217.574785087008
       },
@@ -6482,11 +6672,61 @@
         "Excluded": false,
         "X": 10940.465513982663,
         "Y": -275.95736317402338
+      },
+      {
+        "Id": "392e2678e21d4529ab8ee4d8eeacfe88",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -3347.5155324165526,
+        "Y": 1449.3169139773977
+      },
+      {
+        "Id": "433559d0be854ba38a99314bd92dde6e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "File From Path",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -2586.5513488091442,
+        "Y": 1349.5001382326666
+      },
+      {
+        "Id": "98a532203d5c4dddb88b9c40afe18a91",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Read Excel",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -2376.5991446118469,
+        "Y": 1641.7812491447933
+      },
+      {
+        "Id": "2300adfefeff4f37bdd962e76888ae38",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -2623.0,
+        "Y": 1837.0
+      },
+      {
+        "Id": "c8e8c612b7c047e3afd25421a8f4df29",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Name": "File Path",
+        "ShowGeometry": true,
+        "Excluded": false,
+        "X": -2675.359576209265,
+        "Y": 1670.84415086633
       }
     ],
     "Annotations": [],
-    "X": 6084.9999121599731,
-    "Y": -1618.8110636684069,
-    "Zoom": 1.7433170305908656
+    "X": 3588.273122560061,
+    "Y": -1112.1135462915156,
+    "Zoom": 1.0542964194256332
   }
 }
