@@ -1714,12 +1714,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "\"View Name\";",
+      "Code": "\"Nombre de vista\";",
       "Id": "02d02fe5eafa4408a967f862e4d64bdf",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "381809e744b64588b379ba77d0762dc9",
+          "Id": "4ec9654a25be417db0ceb52ad8c44c61",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -4742,9 +4742,9 @@
       "Id": "e3a809caff8b4c66890853b876a27c29"
     },
     {
-      "Start": "381809e744b64588b379ba77d0762dc9",
+      "Start": "4ec9654a25be417db0ceb52ad8c44c61",
       "End": "09af72fc836c4613ab1228589570f051",
-      "Id": "6cddaa696b124425ae599e8f6f9300ad"
+      "Id": "3845d7c18a884a6ca591f799edea97af"
     },
     {
       "Start": "402f86b866f34c72af3a501ad96340bf",
@@ -6542,8 +6542,8 @@
       }
     ],
     "Annotations": [],
-    "X": 3602.6284522748756,
-    "Y": -1426.1230151017626,
-    "Zoom": 1.4936443080800197
+    "X": -10908.183018214533,
+    "Y": -890.95055417842559,
+    "Zoom": 1.5112535533387377
   }
 }
