@@ -3820,63 +3820,6 @@
       "Description": "Creates a single bounding box for one or more elements and returns a solid.\r\nThe optional input Rotation allows to be not aligned with the axis.\r\nBy Vsevolod Chugreev"
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
-      "FunctionSignature": "DSOffice.Data.ImportExcel@var,string,bool,bool",
-      "Id": "acf582e3e62e4ff4a0195f1af7df3e9a",
-      "Inputs": [
-        {
-          "Id": "a79a902101e847d2926bf3d1fb806fc9",
-          "Name": "file",
-          "Description": "File representing the Microsoft Excel spreadsheet.\n\nvar",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "89e437cd1d67458eb83ac8ea125ea39c",
-          "Name": "sheetName",
-          "Description": "Name of the worksheet containing the data.\n\nstring",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "98817e096ff14abc9ab98c94a1a11773",
-          "Name": "readAsStrings",
-          "Description": "Toggle to switch between reading Excel file as strings.\n\nbool\nDefault value : false",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "83fff6c2cd1e437cb2588233f1bac887",
-          "Name": "showExcel",
-          "Description": "Toggle to switch between showing and hiding the main Excel window.\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "aa4c823da86640fb9514d7ec24394b83",
-          "Name": "data",
-          "Description": "Rows of data from the Excel worksheet.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Read data from a Microsoft Excel spreadsheet. Data is read by row and returned in a series of lists by row. Rows and columns are zero-indexed; for example, the value in cell A1 will appear in the data list at [0,0]. This node requires Microsoft Excel to be installed.\n\nData.ImportExcel (file: var, sheetName: string, readAsStrings: bool = false, showExcel: bool = true): var[][]"
-    },
-    {
       "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
       "NodeType": "ExtensionNode",
       "Id": "747b22f44ca844028db49d202b4fc70e",
@@ -3904,44 +3847,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a file object from a path."
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "\"Hoja1\";\ntrue;\nfalse;",
-      "Id": "481506519d2d431c9bbc331506553935",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "1b7b8a2553c544fc8ede9bfed10bc767",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "26bb2572ad7a4108961853d5763abbea",
-          "Name": "",
-          "Description": "Value of expression at line 2",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "a5de4825027b4efd99fae23b4d3de5f9",
-          "Name": "",
-          "Description": "Value of expression at line 3",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -4557,27 +4462,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Users\\jinun\\OneDrive\\Documentos\\GitHub\\VistaBIMRevitToolbar\\VistaBIM Toolbar.tab\\Comentarios.panel\\Comentario.pushbutton\\No file selected",
-      "InputValue": "No file selected.",
-      "NodeType": "ExtensionNode",
-      "Id": "c8e8c612b7c047e3afd25421a8f4df29",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "66da81d77b9148e8a7e56cb7b0bb26b7",
-          "Name": "",
-          "Description": "Filename",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows you to select a file on the system to get its filename"
     }
   ],
   "Connectors": [
@@ -5202,31 +5086,6 @@
       "Id": "36a0b066e5c3466f9cddc10b43f5d40b"
     },
     {
-      "Start": "aa4c823da86640fb9514d7ec24394b83",
-      "End": "6613a880de444cd9884e773cfeffd024",
-      "Id": "994d2367a7db452684516c09d9d8fb00"
-    },
-    {
-      "Start": "6245b8d930d949be8488a4f196c96c7d",
-      "End": "a79a902101e847d2926bf3d1fb806fc9",
-      "Id": "599cfc501d9444b093e3c946458c8278"
-    },
-    {
-      "Start": "1b7b8a2553c544fc8ede9bfed10bc767",
-      "End": "89e437cd1d67458eb83ac8ea125ea39c",
-      "Id": "3acf8a6cb7ea4d0699998f5f9b773bbb"
-    },
-    {
-      "Start": "26bb2572ad7a4108961853d5763abbea",
-      "End": "98817e096ff14abc9ab98c94a1a11773",
-      "Id": "1dde537336ba4ddabf6ec500b531107e"
-    },
-    {
-      "Start": "a5de4825027b4efd99fae23b4d3de5f9",
-      "End": "83fff6c2cd1e437cb2588233f1bac887",
-      "Id": "8f8a002c77a946ad8e8cf2645752c439"
-    },
-    {
       "Start": "fa71a8e484084ff4a0f8b0a761f8a3b7",
       "End": "999674a85a7d4d49bbaa6d3be86d447f",
       "Id": "28ca57236ff34aebbd0677657d9ffd63"
@@ -5325,6 +5184,11 @@
       "Start": "b503ec782d0347c6bd6fe846fd214e81",
       "End": "cba6f7a960c64a26b2bcced4f4c7c080",
       "Id": "7f8c08b7eccc424eb4f8899d28d3b55f"
+    },
+    {
+      "Start": "ddd20486346b4f579a2da38449bd8670",
+      "End": "6613a880de444cd9884e773cfeffd024",
+      "Id": "5c2bb8dfa16f40d19dcfb1b3acae772a"
     },
     {
       "Start": "5f1e4939cce0445986d55fd1c919cbcc",
@@ -6505,33 +6369,13 @@
       },
       {
         "ShowGeometry": true,
-        "Name": "Data.ImportExcel",
-        "Id": "acf582e3e62e4ff4a0195f1af7df3e9a",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -2420.2027085754926,
-        "Y": 1036.4200477220093
-      },
-      {
-        "ShowGeometry": true,
         "Name": "File From Path",
         "Id": "747b22f44ca844028db49d202b4fc70e",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -2560.7384879178881,
-        "Y": 1036.3040927520904
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "481506519d2d431c9bbc331506553935",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -2420.2027085754926,
-        "Y": 1194.5886454872327
+        "X": -3113.4742905926264,
+        "Y": 695.80662314859148
       },
       {
         "ShowGeometry": true,
@@ -6590,8 +6434,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -3349.2363898093031,
-        "Y": 1217.574785087008
+        "X": -3901.9721924840414,
+        "Y": 877.0773154835091
       },
       {
         "ShowGeometry": true,
@@ -6712,21 +6556,11 @@
         "Excluded": false,
         "X": -2623.0,
         "Y": 1837.0
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "File Path",
-        "Id": "c8e8c612b7c047e3afd25421a8f4df29",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -2675.359576209265,
-        "Y": 1670.84415086633
       }
     ],
     "Annotations": [],
-    "X": 2111.5603493232375,
-    "Y": 11.807897569512534,
-    "Zoom": 0.56202536246557755
+    "X": 3175.8337939648591,
+    "Y": -817.29227185919092,
+    "Zoom": 1.0242183414198631
   }
 }
