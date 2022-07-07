@@ -4406,7 +4406,7 @@
     {
       "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
       "NodeType": "StringInputNode",
-      "InputValue": "\\\\172.20.100.2.\\VistaBIM\\VISTABIM\\DOCTIPO\\Libreta de Direcciones.xlsx ",
+      "InputValue": "\\\\172.20.100.2.\\VistaBIM\\VISTABIM\\DOC TIPO\\Libreta de Direcciones.xlsx ",
       "Id": "9f50725a9c7e44d5877fa24fdf6f56c9",
       "Inputs": [],
       "Outputs": [
@@ -6489,13 +6489,13 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -3014.6071999635692,
-        "Y": 1598.0717237750298
+        "X": -3014.60719996357,
+        "Y": 1598.07172377503
       }
     ],
     "Annotations": [],
-    "X": 2814.3045094499166,
-    "Y": -333.04746076418451,
-    "Zoom": 0.66339078595235634
+    "X": 12701.626478730925,
+    "Y": -5950.7959236235838,
+    "Zoom": 4.0
   }
 }
