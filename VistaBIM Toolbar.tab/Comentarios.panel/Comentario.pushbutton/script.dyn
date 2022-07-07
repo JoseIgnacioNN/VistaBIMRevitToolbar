@@ -4422,6 +4422,37 @@
       ],
       "Replication": "Disabled",
       "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "e47339c8-2025-4f4d-a3d0-749f8ad6194b",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "22e3c94bd3344e4e8db127b2cec91ae7",
+      "Inputs": [
+        {
+          "Id": "f537c6c304ac4793a4d6506ac00a753a",
+          "Name": "list",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e8d8d1f6a22d4cf7aaa558362ffde9b3",
+          "Name": "list",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Removes all Null, Empty and Blank from a list or nested list of lists."
     }
   ],
   "Connectors": [
@@ -4797,8 +4828,8 @@
     },
     {
       "Start": "96223321fc9848c78f2213a50b5c0a93",
-      "End": "9fcd99f07e7e4e7e982609b2c30b4248",
-      "Id": "cdbd1eafdf8b4e7680e5cb4842a4b911"
+      "End": "f537c6c304ac4793a4d6506ac00a753a",
+      "Id": "638d32b9a8fe4a999af075edcacfb7fd"
     },
     {
       "Start": "e314689d4d0d48b6a000af0f3c85f6ba",
@@ -5149,6 +5180,11 @@
       "Start": "adee83e2976a4a0fa7c8f24bd83b55ea",
       "End": "982c0056714d44e4b6928ba5b6a7e281",
       "Id": "e0d3c8a5021046ae81218cd32f9b6b50"
+    },
+    {
+      "Start": "e8d8d1f6a22d4cf7aaa558362ffde9b3",
+      "End": "9fcd99f07e7e4e7e982609b2c30b4248",
+      "Id": "8328b0b6dcda40f08e6e0b79507f2382"
     }
   ],
   "Dependencies": [
@@ -5169,7 +5205,8 @@
     "d1760333-ad7e-4e5f-8076-1448b0b7467e",
     "b36597e1-1bf1-4ef3-baeb-d2453905b9e9",
     "6cf7f3b9-69ab-40da-b41c-62068370e1b8",
-    "7804e3b4-a95a-4ca5-a391-fd9d10566b40"
+    "7804e3b4-a95a-4ca5-a391-fd9d10566b40",
+    "e47339c8-2025-4f4d-a3d0-749f8ad6194b"
   ],
   "NodeLibraryDependencies": [
     {
@@ -5196,7 +5233,8 @@
         "d5b612f0ebcb4e3cbc4e88853a7b0014",
         "d08ead8184314481acd41f1b288f61a4",
         "197b7362e48145d8956147b1ec888a62",
-        "dedf345f1b6c4c72a84fbd028e671c63"
+        "dedf345f1b6c4c72a84fbd028e671c63",
+        "22e3c94bd3344e4e8db127b2cec91ae7"
       ]
     },
     {
@@ -6491,11 +6529,21 @@
         "Excluded": false,
         "X": -3014.60719996357,
         "Y": 1598.07172377503
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "List Clean",
+        "Id": "22e3c94bd3344e4e8db127b2cec91ae7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -1497.4304392120721,
+        "Y": 1281.5119401233082
       }
     ],
     "Annotations": [],
-    "X": 12701.626478730925,
-    "Y": -5950.7959236235838,
-    "Zoom": 4.0
+    "X": 3602.6284522748756,
+    "Y": -1426.1230151017626,
+    "Zoom": 1.4936443080800197
   }
 }
